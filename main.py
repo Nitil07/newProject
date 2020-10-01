@@ -1,3 +1,4 @@
+#its a project for learning purpose
 def password(string):
     
     myList=string.split()
@@ -9,6 +10,10 @@ def password(string):
     return res
 
     
-string =" I love programming because of it's endless applications "
+string =" I love programming because of it's endless applications  "
+newPassword=password(string)
+print(newPassword)
+string =" I love programming because i love to win the world "
+
 newPassword=password(string)
 print(newPassword)
