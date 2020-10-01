@@ -1,14 +1,14 @@
-def password(string):
-    
-    myList=string.split()
-    res=""
-    for i in range(len(myList)):
-        if len(myList[i]) is 2:
-          res =res+'*'
-        res=res+myList[i][0]
-    return res
+def FibonacciRecursion(n):  
+   if n <= 1:  
+       return n  
+   else:  
+       return(FibonacciRecursion(n-1) + FibonacciRecursion(n-2))  
 
-    
-string =" I love programming because of it's endless applications "
-newPassword=password(string)
-print(newPassword)
+n = int(input("Enter the Number of terms? "))  
+if n<= 0:   
+   print("Please enter Postive integer")  
+else:  
+   print("Fibonacci sequence will be :",end= " ")  
+   for i in range(n):  
+       print(FibonacciRecursion(i),end=" ")
+
